@@ -1,0 +1,72 @@
+
+.setting-form {
+	
+	width: 600px;
+	margin: 0 auto;
+}
+
+
+.setting-form label {
+	display: inline-block;
+	min-width: 200px;
+	margin-bottom: 10px;
+}
+
+.setting-form input[type=text]{
+	width: 30px;
+	height: 25px;
+	text-align: center;
+}
+
+.setting-form textarea{
+	width: 500px;
+	height: 300px;
+}
+
+
+.setting-form li{
+	margin-top: 30px;
+}
+
+input[type=submit] {
+  background: #73BF43;
+  background-image: -webkit-linear-gradient(top, #73bf43, #0c8a47);
+  background-image: -moz-linear-gradient(top, #73bf43, #0c8a47);
+  background-image: -ms-linear-gradient(top, #73bf43, #0c8a47);
+  background-image: -o-linear-gradient(top, #73bf43, #0c8a47);
+  background-image: linear-gradient(to bottom, #73bf43, #0c8a47);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 150px;
+  cursor: pointer;
+  margin-left: 170px;
+  display: inline-block;
+}
+
+div.form-errors, div.message {
+		margin-top: 20px;
+		width: 340px;
+		margin: 0 auto;
+}
+
+
+div.form-errors {
+		color: red;
+}
+
+div.message {
+		color: green;
+}
+	
+textarea {
+	padding:10px;
+	font-size: 14px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+
+}

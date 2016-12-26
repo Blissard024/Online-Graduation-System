@@ -1,0 +1,140 @@
+// typography 
+@body_Font_size: 16px;
+@heading_one_font_size:24px;
+@heading_two_font_size:20px;
+@baseline: @body_Font_size * 1.5;
+@serif_font_stack: Georgia,Times,Times New Roman,serif;
+@sans_serif_font_stack: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+// colors
+@button_color: #029F5B;
+@font_color: #3A383A;
+@error_color: #D11141;
+@login_background_color: #ECECEC;
+
+// measurements
+@width: 350px;
+@height: 366px;
+@x-pos: -@width/2;
+@y-pos: -@height/2;
+
+
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.login-background {
+	width: @width;
+	min-height: @height;
+	background-color: @login_background_color;
+	color:black;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:@y-pos;
+	margin-left:@x-pos;
+	opacity: 0.85;
+}
+
+
+.login-form {
+	display: block;
+	width: @width;
+	height: @height;
+	background-color: transparent;
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-top:@y-pos;
+	margin-left:@x-pos;
+	font-family: @sans_serif_font_stack;
+}
+
+.login-form h2 {
+	text-align: center;
+	font-size: @heading_two_font_size;
+  	padding: 24px 0 0;
+  	color: @font_color;
+  	margin-bottom: 32px;
+
+ }
+
+.login-form li {
+  width: 270px;
+  height: 48px;
+  margin: 0px auto 32px;
+  color: @font_color;
+}
+
+.login-form li:last-child {
+	margin-bottom: 24px;
+}
+
+.login-form li.checkbox{
+  margin-bottom: 16px;
+  height: 24px;
+}
+
+
+input {
+	font-family: @sans_serif_font_stack;
+	font-size: @body_Font_size;
+}
+
+label{
+  padding-bottom: 4px;
+  display: block;
+}
+
+
+.login-form input[type=text],
+.login-form input[type=password] {
+  width: 270px;
+  height: 40px;
+  text-align: center;
+  color: @font_color;
+
+
+}
+
+input[type=checkbox]{
+  display: inline-block;
+}
+
+input[type=submit]{
+	background:none;
+	background-color: @button_color;
+	width: 270px;
+ 	height: 40px;
+ 	margin-top: 16px;
+}
+
+form p {
+	color: @error_color;
+	text-align: center;
+}
+
+.form-errors li{
+ height:0;
+}
+
+
+
+
+
+
+
+
+

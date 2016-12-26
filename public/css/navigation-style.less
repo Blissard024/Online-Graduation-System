@@ -1,0 +1,95 @@
+// typography 
+@body_Font_size: 16px;
+@heading_one_font_size:24px;
+@heading_two_font_size:20px;
+@baseline: @body_Font_size * 1.5;
+@serif_font_stack: Georgia,Times,Times New Roman,serif;
+@sans_serif_font_stack: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+
+//  font colors
+@sidebar_font_color: #C1C1BC;
+@sidebar_hover_font_color: #FFF;
+@sidebar_active_font_color: #FFA900;
+@content_font_color: #3A383A;
+
+
+// background colors
+@background_color: #4B6799;
+@sidebar_background_color: #1C1D21;
+@sidebar_hover_background_color: #343F48;
+@sidebar_active_background_color:  #000;
+@content_background_color: #ECECEC;
+// corners
+@corner_radius: 20px;
+
+
+// messurements
+@container-width: 1350px;
+@container-height: 650px;
+@content-width: 1150;
+@sidebar-width: 200;
+
+
+/* general style */
+.nav-menu a  {
+  display: block;
+  width:@sidebar-width;
+  height: 40px;
+  font-size: @heading_two_font_size;
+  font-family: @sans_serif_font_stack;
+  text-decoration: none;
+  color:@sidebar_font_color;
+  padding-top: 20px;
+  border-top: 2px solid #555;
+  border-bottom: 2px solid #333;
+  text-transform:  capitalize;
+  text-align: center;
+}
+
+
+
+/* colors */
+.nav-menu a:hover{
+  color: @sidebar_hover_font_color;
+}
+
+.nav-menu li a.active {
+  color: @sidebar_active_font_color;
+  border-left: 5px solid @sidebar_active_font_color;
+}
+
+
+/*first element corner */
+ul.nav-menu > li:first-child a {
+	  webkit-border-top-left-radius: @corner_radius;
+    -moz-border-radius-topleft: @corner_radius;
+    border-top-left-radius: @corner_radius;
+}
+
+
+/* styling nested <ul> tags */
+html.js ul.nav-menu ul{
+  display: none;
+}
+
+ul.nav-menu ul {
+  background: #343F48;
+}
+
+
+
+ul.nav-menu ul a.active{
+  border-left: none;
+  color: @sidebar_active_font_color;
+}
+
+
+
+ul.nav-menu ul li a {
+  border: none;
+}
+
+
+
+

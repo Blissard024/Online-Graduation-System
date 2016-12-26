@@ -1,0 +1,55 @@
+
+<?php 
+	if(isset($_POST["generate"])){
+		$rows = (int) $_POST["rows"];
+		$coloumns = (int) $_POST["coloumns"];
+		$seatGroup  = "<div class=\"seat-group\">";
+		$seatGroup .= "<div class=\"label\">Test</div>";
+		$seatGroup .= "<div class=\"seat-box\">";
+		$seatGroup .= "<div class=\"row\">";
+		for ($i=0; $i < $rows ; $i++) {
+
+			$seatGroup .= "<span class=\"row-number\">A</span>" ;
+			for ($j=0; $j < $coloumns ; $j++) { 
+				$seatGroup .= "<span class=\"seat\">";
+				$seatGroup .= $j+1;
+				$seatGroup .= "</span>";
+			}
+
+			$seatGroup .= "</div>";
+		}
+
+		$seatGroup .= "</div></div>";
+		echo $seatGroup;
+	}
+
+?>
+
+<html>
+<head>
+	<title>Seat Arrangement</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<div class="seat-generator">
+		<form action="seat_arrangement.php" method="POST">
+			<ul>
+				<li>
+					<label>Rows: </label>
+					<input type="text" name="rows">
+				</li>
+				<li>
+					<label>Coloumns: </label>
+					<input type="text" name="coloumns">
+				</li>
+				<li>
+					<input type="submit" name="generate" value="generate">
+				</li>
+			</ul>
+		</form>
+	</div>
+
+	<div class="box">
+	</div>
+</body>
+</html>

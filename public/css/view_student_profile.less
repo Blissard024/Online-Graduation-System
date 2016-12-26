@@ -1,0 +1,87 @@
+// typography 
+@body_Font_size: 16px;
+@heading_one_font_size:24px;
+@heading_two_font_size:20px;
+@baseline: @body_Font_size * 1.5;
+@serif_font_stack: Georgia,Times,Times New Roman,serif;
+@sans_serif_font_stack: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+
+//  font colors
+@sidebar_font_color: #C1C1BC;
+@sidebar_hover_font_color: #FFF;
+@sidebar_active_font_color: #FFA900;
+@content_font_color: #3A383A;
+
+
+// background colors
+@background_color: #4B6799;
+@sidebar_background_color: #1C1D21;
+@sidebar_hover_background_color: #343F48;
+@sidebar_active_background_color:  #000;
+@content_background_color: #ECECEC;
+// corners
+@corner_radius: 20px;
+
+
+// messurements
+@container-width: 1350px;
+@container-height: 650px;
+@content-width: 1150;
+@sidebar-width: 200;
+
+
+
+div.left {
+	margin-top: @baseline;
+	margin-left: @baseline*2;
+	width: 460px;
+	float:left;
+
+}
+
+div.left li	{
+	margin-bottom: @baseline;
+}
+
+
+table td {
+	width: 360px;
+	padding-bottom: @baseline;
+}
+
+.caption {
+	 width: 180px;
+	 font-weight: bold;
+	 font-style: normal;
+
+}
+
+p {
+	 font-style: italic;
+}
+
+button {
+  background: #73BF43;
+  background-image: -webkit-linear-gradient(top, #73BF43, #0c8a47);
+  background-image: -moz-linear-gradient(top, #73BF43, #0c8a47);
+  background-image: -ms-linear-gradient(top, #73BF43, #0c8a47);
+  background-image: -o-linear-gradient(top, #73BF43, #0c8a47);
+  background-image: linear-gradient(to bottom, #73BF43, #0c8a47);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border:0;
+
+  float:right;
+  cursor: pointer;
+  margin-top: @baseline*4;
+  margin-right:@baseline;
+}
+
+

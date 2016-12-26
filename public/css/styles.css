@@ -1,0 +1,79 @@
+/*this div is just for alignments and adjustments*/
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  background-color: #4b6799;
+  background: url(../img/caps01.png) left repeat;
+  
+
+}
+.container {
+  width: 1350px;
+  margin: 24px auto;
+  overflow: hidden;
+}
+.sidebar {
+  width: 200;
+  height: 700px;
+  float: left;
+  background-color: #1c1d21;
+  webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-left-radius: 20px;
+}
+.content {
+  width: 1150;
+  height: 700px;
+  float: right;
+  background-color: #ececec;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*this div is just for alignments and adjustments*/
+.content-container {
+  margin: 24px;
+}
+.content-header {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  padding-bottom: 18px;
+  color: #3a383a;
+  font-size: 24px;
+  border-bottom: 1px solid #c1c1bc;
+}
+.content-body {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #3a383a;
+  color: #000;
+  line-height: 24px;
+  height: 580px;
+  overflow: auto;
+}
+
+
+.admin_profile {
+  border: 5px solid #53AE44;
+  width: 600px;
+  margin: 0 auto;
+  padding:50px;
+  margin-top: 100px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.admin_profile{
+  font-size: 30px;
+  text-align: center;
+  color: green;
+}
